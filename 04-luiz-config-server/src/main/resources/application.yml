@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: luiz-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Luizfelipe25/luiz-config-server
+          #username: LuizFelipe25
+          #password: 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
+          default-label: main
+          search-paths:
+          - 'greeting-service*' 
